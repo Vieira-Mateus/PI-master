@@ -1,0 +1,36 @@
+<h2>Cadastar Usuário</h2>
+{{#each errosNaPagina}}
+    <div class="alert alert-danger">{{texto}}</div>
+{{else}}
+
+{{/each}}
+
+<form action="/cadastrar/usuario" method="post">
+    <div class="mb-3">
+        <label class="form-label">Nome</label>
+        <input class="form-control" type="text" name="nome">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input class="form-control" type="email" name="email">
+    </div>
+
+     <div class="mb-3">
+        <label class="form-label">Login</label>
+        <input class="form-control" type="text" name="login">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">CPF</label>
+        <input class="form-control" type="text" name="cpf">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Senha</label>
+        <input class="form-control" type="password" name="senha">
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+    <a href="/"><button type="button" class="btn btn-success">Voltar</button></a>
+</form>

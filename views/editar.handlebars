@@ -1,0 +1,31 @@
+<h2>Editando imóvel com ID {{idImoveis}}</h2>
+<form action="/ediReq/{{idImoveis}}" method="post">
+
+    <div class="mb-3">
+        <label class="form-label">Nome do proprietario</label>
+        <input class="form-control" type="text" name="nomeDoProprietario" value="{{nomeDoProprietario}}">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Local</label>
+        <input class="form-control" type="text" name="local" value="{{local}}">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Tipo de imóvel</label>
+        <input class="form-control" type="text" name="tipoDeImovel" value="{{tipoDeImovel}}">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Situação Do imóvel</label>
+        <input class="form-control" type="text" name="situacao" value="{{situacao}}">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Valor do imóvel</label>
+        <input class="form-control" type="text" name="valor" value="{{valor}}">
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Atualizar</button>
+    <a href="/"><button type="button" class="btn btn-success">Voltar</button></a>
+</form>
