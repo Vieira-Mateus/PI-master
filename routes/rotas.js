@@ -20,11 +20,12 @@ rotas.get("/logout", (req,res) => {
 })
 
 rotas.get("/" ,controladorImoveis.buscarImoveis) ;
-rotas.get("/cadastroImoveis",controladorImoveis.cadastroImoveis);
-rotas.put("/:id", controladorImoveis.atualizarImoveisBanco);
-rotas.delete("/:id", controladorImoveis.removerImoveisBanco);
- 
+rotas.post("/cadastroImoveis" ,controladorImoveis.cadastroImoveis);
+rotas.get("/buscarPagina", controladorImoveis.cadastro )
+rotas.get("/editar1", controladorImoveis.editarImoveis)
+rotas.delete("/removr/", controladorImoveis.removerImoveisBanco);
 
+ 
 rotas.get("/login",controlador.mostrarFormLogin)
 rotas.post("/cadastrar/usuario", controlador.inserirUsuarioBanco);
 rotas.get("/cadastro/usuario", controlador.cadastro);

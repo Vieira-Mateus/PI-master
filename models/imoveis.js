@@ -11,11 +11,6 @@ var imoveis = banco.define("imoveis",{
     nomePropretario: {
         type: sequelize.STRING(40),
         allowNull: false,
-        
-    },
-    idCorretor: {
-        type: sequelize.INTEGER,
-        allowNull: false,
     },
     tipo: {
         type: sequelize.STRING(30),
@@ -26,10 +21,7 @@ var imoveis = banco.define("imoveis",{
         type: sequelize.STRING(40),
         allowNull: false,  
     },
-    proprietario: {
-        type: sequelize.STRING(50),
-        allowNull: false,  
-    },
+   
     local: {
         type: sequelize.STRING(50),
         allowNull: false,  

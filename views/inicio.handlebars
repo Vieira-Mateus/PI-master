@@ -1,4 +1,5 @@
-<a href="/cadastroImoveis"><button type="button" class="btn btn-success">Cadastrar Imóvel</button></a>
+
+<a href="/buscarPagina"><button type="button" class="btn btn-success">Cadastrar Imóvel</button></a>
 <a href="/cadastro/Usuario"><button type="button" class="btn btn-success">Cadastrar Usuário</button></a>
 {{#if user}}
 <a href="/logout"><button type="button" class="btn btn-success">Sair</button></a>
@@ -27,7 +28,7 @@
             <td>{{nomeDoProprietario}}</td>
             <td>{{valor}}</td>
                 <td>
-                    <a href="/editar/{{id}}"><button type="submit" class="btn btn-warning">Editar</button></a>
+                    <a href="/editar{{id}}"><button type="submit" class="btn btn-warning">Editar</button></a>
                     <a href="/remover/{{id}}"><button type="submit" class="btn btn-danger">Apagar</button></a>
                 </td>
         </tr>

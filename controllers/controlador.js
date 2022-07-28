@@ -1,9 +1,9 @@
 var usuario = require('../models/comprador');
 var cripto = require("bcryptjs")
 
-const usuarioControlador = {};
+const controlador = {};
 
-usuarioControlador.mostrarFormLogin = function(req,res){
+controlador.mostrarFormLogin = function(req,res){
     try {
         res.render("login")
     } catch (error) {
@@ -11,7 +11,7 @@ usuarioControlador.mostrarFormLogin = function(req,res){
     }
 }
 
-usuarioControlador.inserirUsuarioBanco = async function (req, res) {
+controlador.inserirUsuarioBanco = async function (req, res) {
     var erros = []
 
     if(!req.body.email || typeof req.body.email == undefined || req.body.email == null){
@@ -35,7 +35,6 @@ usuarioControlador.inserirUsuarioBanco = async function (req, res) {
             nome: req.body.nome,
             email: req.body.email,
             senha: pass,
-            eAdmin: req.body.eAdmin
         }).then(
             function(){
                 req.flash("success_msg","Usuário cadastrado com sucesso!")
@@ -53,7 +52,7 @@ usuarioControlador.inserirUsuarioBanco = async function (req, res) {
 }
 
 
-usuarioControlador.cadastro = function (req, res) {
+controlador.cadastro = function (req, res) {
     try {
         res.render("cadastroUsuario")
     } catch (error) {
@@ -61,4 +60,4 @@ usuarioControlador.cadastro = function (req, res) {
     }
 };
 
-module.exports = usuarioControlador
+module.exports = controlador
