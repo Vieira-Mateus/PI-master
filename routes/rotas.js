@@ -22,7 +22,7 @@ rotas.get("/logout", (req,res) => {
 rotas.get("/" ,controladorImoveis.buscarImoveis) ;
 rotas.post("/cadastroImoveis" ,controladorImoveis.cadastroImoveis);
 rotas.get("/buscarPagina", controladorImoveis.cadastro )
-rotas.get("/editar1", controladorImoveis.editarImoveis)
+rotas.get("/editar/:id", controladorImoveis.editarImoveis)
 rotas.delete("/removr/", controladorImoveis.removerImoveisBanco);
 
  

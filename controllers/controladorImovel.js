@@ -96,7 +96,7 @@ imoveisControlador.editarImoveis = function(req,res){
         }
     }).then(
         function(imoveis){
-            res.render("/editar",{
+            res.render("editar",{
                 cod: req.body.cod,
                 codCorretor: req.body.codCorretor,
                 nomePropretario: req.body.nomeDoProprietario, 
