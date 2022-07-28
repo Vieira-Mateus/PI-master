@@ -129,7 +129,7 @@ imoveisControlador.montarReqEdicao = function (req, res) {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
             proxy:{
-                host: "localhost",
+                host: "54.84.192.224",
                 port: 3000
             }
         }
@@ -145,7 +145,7 @@ imoveisControlador.montarReqEdicao = function (req, res) {
 imoveisControlador.montarReqDelete = function (req, res) {
     axios.delete('/' + req.params.id,{
         proxy:{
-            host: "localhost",
+            host: "54.84.192.224",
             port: 3000
         }
         

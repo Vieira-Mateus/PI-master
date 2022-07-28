@@ -1,7 +1,7 @@
 var sequelize = require("sequelize")
 
-var conexao = new sequelize("pi","root","123456",{
-    host: "localhost",
+var conexao = new sequelize("progweb","root","12345678",{
+    host: "progweb.cwdesbn95twn.us-east-1.rds.amazonaws.com",
     dialect: "mysql"
 })
 

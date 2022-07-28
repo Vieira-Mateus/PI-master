@@ -23,7 +23,9 @@ rotas.get("/" ,controladorImoveis.buscarImoveis) ;
 rotas.post("/cadastroImoveis" ,controladorImoveis.cadastroImoveis);
 rotas.get("/buscarPagina", controladorImoveis.cadastro )
 rotas.get("/editar/:id", controladorImoveis.editarImoveis)
-rotas.delete("/removr/", controladorImoveis.removerImoveisBanco);
+rotas.delete("/remover/", controladorImoveis.removerImoveisBanco);
+rotas.post("/ediReq/:id",controladorImoveis.atualizarImoveisBanco)
+
 
  
 rotas.get("/login",controlador.mostrarFormLogin)

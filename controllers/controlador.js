@@ -25,7 +25,8 @@ controlador.inserirUsuarioBanco = async function (req, res) {
     if(req.body.senha.length < 6){
         erros.push({texto: "Senha muito pequena!"})
     }
-
+    console.log
+    
     if(erros.length > 0){//se existe algum erro
         res.render("cadastroUsuario",{errosNaPagina: erros})
     }else{
